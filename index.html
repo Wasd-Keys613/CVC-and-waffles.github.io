@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+
+        <!--now time to do some styling!-->   
+        <style>
+            #button {
+                margin: 100px;
+                align-content: center;
+            }
+
+
+            .hed {
+                font-family: cursive;
+            }
+
+
+            body {
+                background-color: rgb(248, 183, 4);
+            } 
+
+            .head {
+                border:4px dashed rgb(255, 230, 0);
+                padding: 5px;
+                align-items: baseline;
+                align-content: center;
+                font-size: 50px;
+                text-align: center;
+                background-color: black;
+                color:goldenrod;
+            }
+
+            .text {
+                border:4px dotted beige;
+                align-items: baseline;
+                align-content: center;
+                font-size: 15px;
+                text-align: center;
+                background-color: black;
+                color:goldenrod; 
+                align-self: center;               
+            }
+
+            audio {
+                align-self: flex-end;
+            }
+
+            p {
+                size: 70px;
+            }
+        </style>
+
+        <h1 class="head">CVC AND WAFFLES</h1>
+        <h2 class="hed head">made like no other</h2>
+    <div class="text">
+        <!--now some text-->
+        <article class="txt">
+            <p>
+                our quality is unbeaten just see this little video below 
+            </p>
+            <p>
+                and check our menu by clicking the video below the button
+            </p>
+        </article>
+        <bgsound src="file:\C:\Users\Ahmad Baber\Downloads\New folder\dsyfgyusdtfg.mp3"/>
+
+        <!--images-->
+        <!--<img src="file:\C:\Users\Ahmad Baber\OneDrive\Pictures\Camera Roll\Saved Pictures\jkhfgjkgv.jpg" height = 50% width= 50% alt="medium cup">-->
+
+        <video  autoplay="on" controls="" loop="on" height="870px" height="480px">
+            <source src="b.mp4" type="video/mp4">
+        </video>
+    </div>
+    <button id="button">click to see our menu</button>
+
+    <script>
+        // Create an image element
+        var img = document.createElement('img');
+
+        // Set the source of the image element
+        img.src = 's.jpg';
+
+        // Set the style of the image element to hide it by default
+        img.style.display = 'none';
+
+        // Append the image element to the document body
+        document.body.appendChild(img);
+
+        // Select the button element
+        var button = document.getElementById('button');
+
+        // Add the event listener to the button element
+        button.addEventListener('click', showImage, false);
+
+        // Define the function to show the image when the button is clicked
+        function showImage() {
+        img.style.display = 'block';
+        }
+    </script>
+    </body>
+</html>
